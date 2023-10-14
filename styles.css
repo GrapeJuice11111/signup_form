@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 
@@ -16,4 +17,13 @@ body{
     height: 690px;;
 }
 
-
+.right-side{
+    display: flex;
+    flex-direction: column;
+    background-color: #DCDCDC ;
+    width: 100%;
+}
+.message{
+    display: block;
+    margin: 20px;
+}
