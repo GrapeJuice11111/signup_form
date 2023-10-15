@@ -8,6 +8,10 @@ body{
     display: flex;
 }
 
+@font-face {
+    font-family: nordic;
+    src: url("fonts/Norse-Bold.otf");
+}
 
 .left-side{
     background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
@@ -25,5 +29,23 @@ body{
 }
 .message{
     display: block;
-    margin: 20px;
+}
+
+.foronlytext{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: large;
+    margin-top: 120px;
+    margin-left: 40px;;
+}
+.upper{
+    margin-left: 5px;
+}
+
+.bottom{
+    margin-top: 10px;
+}
+
+.italicized{
+    font-style: italic;
 }
