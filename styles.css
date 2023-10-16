@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 :root{
     --height-for-viewport: 300px;
     --color-for-background: #DCDCDC;
@@ -23,15 +24,14 @@ body{
     background-position: center;
     background-size: 640px 960px;
     width: 500px;
-    height: 690px;;
 }
 
 .right-side{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color: var(--color-for-background);
+    width: 800px;
 }
 .message{
     display: block;
@@ -41,12 +41,12 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     font-size: large;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 40px;
-    margin-bottom: 100px;;
+    margin-bottom: 50px;;
     background-color: var(--color-for-background); 
-    width: 100%;
-    max-height: var(--height-for-viewport)
+    max-height: var(--height-for-viewport);
+    width: 700px;
 }
 .upper{
     margin-left: 5px;
@@ -63,20 +63,25 @@ body{
 .forsignupform{
     background-color: white;
     width: 100%;
-    height: calc(calc(500px)+calc(1.5vh));
+    height: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
-.secondlineuptext{
-    font-family: Arial, Helvetica, sans-serif;
+.textbeforeform{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
-    font-weight: bold;
-    margin-left: 60px;
+    font-weight: lighter;
+    margin-left: 60px; 
+    height: 10px;
+    position: absolute;
+    bottom: 330px;
 }
 
 button{
     border-radius: 3px;
     color: white;
-    background-color: #3cb043;
+    background-color: #596d48;
     width: 125px;
     height: 30px; 
     display: block;
@@ -84,8 +89,53 @@ button{
     margin-bottom: 20px;
 }
 
-.buttoncontent{
+.buttoncontent{ 
+    background-color: #DCDCDC;
     margin-left: 50px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
+}
+
+input{
+    border-radius: 3px;
+    margin: 6px;
+    width: 200px;
+    height: 25px;
+    display: inline;
+    display: flex;
+    border: 1px solid gray;
+}
+
+.textlets{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+form{
+    margin-top: 70px; 
+}
+
+
+
+.name,
+.contact,
+.password{
+    margin: 20px;
+    display: flex; 
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 525;
+    align-items: start;
+    
+}
+
+label + input{
+    appearance: none;
+}
+
+.forbutton{
+    background-color: var(--color-for-background);
+    
 }
