@@ -20,9 +20,9 @@
             <span class="middle message">Sign up <span class=italicized>now</span> to get started.</span> 
             <span class="bottom message">You <span class="italicized">know</span> you want to.</span>
         </div>
-        <div class="forsignupform"></div>
-        <span class="secondlineuptext">Let's do this</span>
-        <form action="#" method="post">
+        <div class="forsignupform">
+        Let's do this!
+        <form action="#" method="post" id="signupform">
             <div>
             <label for="first_name">FIRST NAME</label>
             <input type="text" id="first_name" name="first_name" />
@@ -53,8 +53,14 @@
                 <input type="password" id="user_confirmpwd" name="user_confirmpwd" />
             </div>
         </form>
+        </div>
 
-        <div class="forbutton"></div>
+        <div class="forbutton">
+            <div class="buttoncontent">
+            <button type="submit" form="signupform">Create Account</button>
+            <span class="buttondown">Already have an account? <a href="https://www.google.com" class="login">Log in</a></span>
+        </div>
+        </div>
     </div>
 </body>
 </html>

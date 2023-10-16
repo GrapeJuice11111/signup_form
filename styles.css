@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --height-for-viewport: 300px;
+    --color-for-background: #DCDCDC;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -22,10 +27,11 @@ body{
 }
 
 .right-side{
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: #DCDCDC ;
     width: 100%;
+    background-color: var(--color-for-background);
 }
 .message{
     display: block;
@@ -35,8 +41,12 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: normal;
     font-size: large;
-    margin-top: 120px;
-    margin-left: 40px;;
+    margin-top: 100px;
+    margin-left: 40px;
+    margin-bottom: 100px;;
+    background-color: var(--color-for-background); 
+    width: 100%;
+    max-height: var(--height-for-viewport)
 }
 .upper{
     margin-left: 5px;
@@ -48,4 +58,34 @@ body{
 
 .italicized{
     font-style: italic;
+}
+
+.forsignupform{
+    background-color: white;
+    width: 100%;
+    height: calc(calc(500px)+calc(1.5vh));
+}
+
+.secondlineuptext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+button{
+    border-radius: 3px;
+    color: white;
+    background-color: #3cb043;
+    width: 125px;
+    height: 30px; 
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.buttoncontent{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
